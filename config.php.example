@@ -1,0 +1,6 @@
+<?php
+
+return [
+    'APP_URL' => 'http://localhost/landing-boilerplate/',
+    'API_URL' => 'http://localhost/landing-boilerplate/sample-data/'
+];

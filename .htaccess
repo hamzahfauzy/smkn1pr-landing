@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^sample-data/post sample-data/post.php [L]
+RewriteRule ^sample-data/single sample-data/single.php [L]
+RewriteRule ^([^/.]+)/?$ single.php?slug=$1 [L]
