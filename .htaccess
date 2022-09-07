@@ -1,4 +1,8 @@
 RewriteEngine on
+RewriteRule ^sample-data/site-options sample-data/site-options.php [L]
+RewriteRule ^sample-data/landing sample-data/landing.php [L]
+RewriteRule ^sample-data/menu sample-data/menu.php [L]
 RewriteRule ^sample-data/post sample-data/post.php [L]
 RewriteRule ^sample-data/single sample-data/single.php [L]
-RewriteRule ^([^/.]+)/?$ single.php?slug=$1 [L]
+RewriteRule ^category/([^/.]+) category.php?name=$1 [L,QSA]
+RewriteRule ^([^/.]+)/?$ single.php?slug=$1 [L,QSA]

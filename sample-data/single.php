@@ -4,29 +4,58 @@ if(isset($_GET['slug']))
 {
     $data = [
         [
-            'post_title'   => 'this is post title',
-            'post_content' => '<p>this is post content</p>',
-            'post_name'    => 'this-is-post-title'
+            'title'   => 'Visi dan Misi',
+            'content' => '<p>Ini adalah visi dan misi</p>',
+            'name'    => 'visi-dan-misi',
+            'type'    => 'page',
+            'template'=> 'visi-misi.php',
         ],
         [
-            'post_title'   => 'this is post title 2',
-            'post_content' => '<p>this is post content 2</p>',
-            'post_name'    => 'this-is-post-title-2'
+            'title'   => 'Profil',
+            'content' => '<p>Ini adalah profil</p>',
+            'name'    => 'profile',
+            'type'    => 'page',
+            'template'=> 'profil.php',
         ],
         [
-            'post_title'   => 'this is post title 3',
-            'post_content' => '<p>this is post content 3</p>',
-            'post_name'    => 'this-is-post-title-3'
+            'title'   => 'Berita',
+            'content' => '<p>Ini adalah berita</p>',
+            'name'    => 'berita',
+            'type'    => 'page',
+            'template'=> 'berita.php',
         ],
         [
-            'post_title'   => 'this is post title 4',
-            'post_content' => '<p>this is post content 4</p>',
-            'post_name'    => 'this-is-post-title-4'
+            'title'   => 'Kontak',
+            'content' => '<p>Ini adalah kontak</p>',
+            'name'    => 'contact',
+            'type'    => 'page',
+            'template'=> 'contact.php',
+        ],
+        [
+            'title'   => 'Sample Post 1',
+            'content' => '<p>this is post content</p>',
+            'name'    => 'sample-post-1',
+            'type'    => 'post',
+            'template'=> '',
+        ],
+        [
+            'title'   => 'Sample Post 2',
+            'content' => '<p>this is post content</p>',
+            'name'    => 'sample-post-2',
+            'type'    => 'post',
+            'template'=> '',
+        ],
+        [
+            'title'   => 'Sample Post 3',
+            'content' => '<p>this is post content</p>',
+            'name'    => 'sample-post-3',
+            'type'    => 'post',
+            'template'=> '',
         ],
     ];
 
     $data = array_filter($data, function($d){
-        return $d['post_name'] == $_GET['slug'];
+        return $d['name'] == $_GET['slug'];
     });
 
     echo json_encode([

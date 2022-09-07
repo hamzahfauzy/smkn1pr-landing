@@ -2,24 +2,39 @@
 
 $data = [
     [
-        'post_title'   => 'this is post title',
-        'post_content' => '<p>this is post content</p>',
-        'post_name'    => 'this-is-post-title'
+        'title'   => 'this is post title',
+        'content' => '<p>this is post content</p>',
+        'name'    => 'this-is-post-title',
+        'type'    => 'post',
+        'template'=> '',
     ],
     [
-        'post_title'   => 'this is post title 2',
-        'post_content' => '<p>this is post content 2</p>',
-        'post_name'    => 'this-is-post-title-2'
+        'title'   => 'this is post title 2',
+        'content' => '<p>this is post content 2</p>',
+        'name'    => 'this-is-post-title-2',
+        'type'    => 'post',
+        'template'=> '',
     ],
     [
-        'post_title'   => 'this is post title 3',
-        'post_content' => '<p>this is post content 3</p>',
-        'post_name'    => 'this-is-post-title-3'
+        'title'   => 'this is post title 3',
+        'content' => '<p>this is post content 3</p>',
+        'name'    => 'this-is-post-title-3',
+        'type'    => 'post',
+        'template'=> '',
     ],
     [
-        'post_title'   => 'this is post title 4',
-        'post_content' => '<p>this is post content 4</p>',
-        'post_name'    => 'this-is-post-title-4'
+        'title'   => 'this is post title 4',
+        'content' => '<p>this is post content 4</p>',
+        'name'    => 'this-is-post-title-4',
+        'type'    => 'post',
+        'template'=> '',
+    ],
+    [
+        'title'   => 'Visi dan Misi',
+        'content' => '<p>Ini adalah visi dan misi</p>',
+        'name'    => 'visi-dan-misi',
+        'type'    => 'page',
+        'template'=> 'visi-misi.php',
     ],
 ];
 
