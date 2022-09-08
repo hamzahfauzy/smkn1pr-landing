@@ -31,7 +31,7 @@ $landing = $landing['data'];
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
           <h3><?=$landing['featured']['title']?></h3>
-          <?=$landing['featured']['content']?>
+          <?=strWordCut($landing['featured']['content'],30)?>
 
         </div>
       </div>
@@ -82,7 +82,7 @@ $landing = $landing['data'];
               </div>
 
               <h3><a href="<?=url($post['name'])?>"><?=$post['title']?></a></h3>
-              <p><?=$post['content']?></p>
+              <p><?=strWordCut($post['content'],30)?></p>
               <div class="trainer d-flex justify-content-between align-items-center">
                 <div class="trainer-profile d-flex align-items-center">
                   <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
@@ -120,7 +120,7 @@ $landing = $landing['data'];
             <div class="member-content">
               <h4><?=$prestasi['title']?></h4>
               <?=implode(',',array_map(function($p){return '<span>'.$p['title'].'</span>';},$post['categories']))?></h4>
-              <?=$prestasi['content']?>
+              <?=strWordCut($prestasi['content'],30)?>
             </div>
           </div>
         </div>

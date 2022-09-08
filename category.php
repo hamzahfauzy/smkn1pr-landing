@@ -29,7 +29,7 @@ $posts = Post::singleCategory($_GET['name']);
                 </div>
 
                 <h3><a href="<?=url($data['name'])?>"><?=$data['title']?></a></h3>
-                <?=$data['content']?>
+                <?=strWordCut($data['content'],30)?>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="<?=url()?>assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
