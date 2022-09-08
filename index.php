@@ -9,7 +9,7 @@ $landing = $landing['data'];
 
 <?php if(isset($landing['hero'])): ?>
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex justify-content-center align-items-center" style="background:url(<?=$landing['hero']['thumb_url']?>) top cover;background-size:cover;">
+<section id="hero" class="d-flex justify-content-center align-items-center" style="background:url(<?=$landing['hero']['thumb_url']?>) top center;background-size:cover;">
   <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
     <h1><?=$landing['hero']['title']?></h1>
     <h2><?=$landing['hero']['content']?></h2>
