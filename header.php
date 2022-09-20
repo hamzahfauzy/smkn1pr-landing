@@ -13,6 +13,7 @@ $sitename = site_options('name');
   <title><?=get_title()?></title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta property="og:image" content="<?= isset($og_gambar) ? $og_gambar : url('').'assets/img/logo.png' ?>">
 
   <!-- Favicons -->
   <link href="<?=url('')?>assets/img/logo.png" rel="icon">

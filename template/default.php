@@ -1,6 +1,10 @@
 <?php 
+$og_gambar = $content['thumb_url'];
 include('header.php'); 
 ?>
+<div itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
+<meta content="<?=$og_gambar?>" itemprop="url"/>
+</div>
 <main id="main" class="single-default">
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
