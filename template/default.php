@@ -1,5 +1,7 @@
-<?php include('header.php'); ?>
-<main id="main">
+<?php 
+include('header.php'); 
+?>
+<main id="main" class="single-default">
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
@@ -12,12 +14,16 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-12 col-md-8">
+          <div class="col-12">
+            <div class="author-section">
+              <b><i class="bi bi-person-circle"></i> Admin</b> | 
+              <?=implode(',',array_map(function($p){return '<span>'.$p['title'].'</span>';},$content['categories']))?> | 
+              <i class="bi bi-calendar-date"></i> <?= date('d-m-Y H:i', strtotime($content['created_at'])) ?>
+            </div>
+            <div class="thumbnail">
+              <img src="<?=$content['thumb_url']?>" alt="<?=$content['title']?>">
+            </div>
             <?=$content['content']?>
-          </div>
-          <div class="col-12 col-md-4">
-            <h3>Berita Populer</h3>
-            <h3>Berita Terbaru</h3>
           </div>
         </div>
 

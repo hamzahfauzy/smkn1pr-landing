@@ -129,8 +129,8 @@ jQuery(window).on("load", function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Apache24\htdocs\landing\src\js\theme.js */"./src/js/theme.js");
-module.exports = __webpack_require__(/*! C:\Apache24\htdocs\landing\src\sass\theme.scss */"./src/sass/theme.scss");
+__webpack_require__(/*! C:\xampp\htdocs\landing\src\js\theme.js */"./src/js/theme.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\landing\src\sass\theme.scss */"./src/sass/theme.scss");
 
 
 /***/ })

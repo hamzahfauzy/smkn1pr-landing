@@ -1,0 +1,15 @@
+.single-default {
+    .author-section {
+        font-size:12px;
+        font-style: italic;
+    }
+    .thumbnail {
+        margin-top:15px;
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

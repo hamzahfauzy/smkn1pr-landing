@@ -32,6 +32,7 @@ $sitename = site_options('name');
 
   <!-- Template Main CSS File -->
   <link href="<?=url('')?>assets/css/style.css" rel="stylesheet">
+  <link href="<?=url('')?>assets/css/theme.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Mentor - v4.8.1
