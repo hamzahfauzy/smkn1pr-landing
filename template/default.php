@@ -17,7 +17,7 @@ include('header.php');
           <div class="col-12">
             <div class="author-section">
               <b><i class="bi bi-person-circle"></i> Admin</b> | 
-              <?=implode(',',array_map(function($p){return '<span>'.$p['title'].'</span>';},$content['categories']))?> | 
+              <?=implode(',',array_map(function($p){return '<span><a href="'.url('category/'.$p['name']).'">'.$p['name'].'</a></span>';},$content['categories']))?> | 
               <i class="bi bi-calendar-date"></i> <?= date('d-m-Y H:i', strtotime($content['created_at'])) ?>
             </div>
             <div class="thumbnail">
